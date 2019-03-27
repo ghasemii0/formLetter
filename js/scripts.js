@@ -1,6 +1,9 @@
 $(document).ready(function()  {
-  $("form#name").submit(function(event)  {
-    
+  $("#name").submit(function(event)  {
+    var nameToAddress = $("input#name1").val();
+
+    $(".nameAddress").text(nameToAddress);
+    $(letter).show();
     event.preventDefault();
   });
-}):
+});
